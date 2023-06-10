@@ -18,7 +18,7 @@ class BaseModel:
         if kwargs is not None:
             if "__class__" in kwargs.keys():
                 del kwargs["__class__"]
-            if "id" in kwargs.keys():
+            if "id" in kwargs.keys(): 
                 self.__id = kwargs["id"]
                 del kwargs["id"]
             self.__dict__.update(kwargs)
