@@ -17,6 +17,5 @@ class City(BaseModel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-    def to _dict(self):
+    def to_dict(self):
         return super (City, self).to_dict()
-    
