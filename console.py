@@ -1,29 +1,29 @@
 #!/usr/bin/python3
 """
-    command interpreter for the project AirBnB
+    Command interpreter for AnA-BnB
 """
 import cmd
-import sys 
-import os 
+import sys
+import os
 import inspect
 import shlex
 from models.models import model_classes
-import models 
+import models
 
 
 class HBNBCommand(cmd.Cmd):
-    promt= '(hbnb) '
+    prompt = '(hbnb) '
     file = None
 
-    def do_EOF(self, args):
-        """implements EOF a code placed by a computer after a file's last byte of data"""
-        return True
-
-     def do_quit(self, arg):
+    def do_EOF(self, arg):
         """Implements EOF"""
         return True
-    
-     def emptyline(self):
+
+    def do_quit(self, arg):
+        """Implements EOF"""
+        return True
+
+    def emptyline(self):
         """An empty line + 'enter' shoudln't execute anything"""
         pass
 
@@ -39,7 +39,7 @@ class HBNBCommand(cmd.Cmd):
             my_model.save()
             print(my_model.id)
 
-     def do_show(self, arg):
+    def do_show(self, arg):
         """Prints the string representation of an instance based
             on the class name and id"""
         if arg is None or arg == "":
@@ -117,6 +117,7 @@ class HBNBCommand(cmd.Cmd):
             elif action == "destroy":
                 self.do_destroy(cls + " " + params[1:-1])
             elif action == "update":
+                # TODO: implement dict conversion for advanced task 16
                 # get parameters as list
                 p = params.split(", ")
                 # strip quotes from id and attrib within parenthesis
