@@ -1,6 +1,6 @@
-#!/usr/bin/python3
-""" Module for models dict """
-
+"""
+    Module for models dict
+"""
 
 from models.base_model import BaseModel
 from models.user import User
@@ -10,10 +10,11 @@ from models.place import Place
 from models.review import Review
 from models.amenity import Amenity
 
-model_classes = dict({("BaseModel", BaseModel),
-                      ("User", User),
-                      ("State", State),
-                      ("City", City),
-                      ("Place", Place),
-                      ("Amenity", Amenity),
-                      ("Review", Review)})
+model_classes = dict({
+    ("BaseModel", BaseModel),
+    ("User", User),
+    ("State", State),
+    ("City", City),
+    ("Place", Place),
+    ("Amenity", Amenity),
+    ("Review", Review)})

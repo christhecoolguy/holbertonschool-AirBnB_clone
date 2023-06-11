@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-    states model
-
+    Module for State model
 """
 from models.base_model import BaseModel
 

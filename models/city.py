@@ -1,15 +1,17 @@
 #!/usr/bin/python3
 """
-cities
+    Module for Cities model
 """
-from modles.base_model import BaseModel
+from models.base_model import BaseModel
 
 
 class City(BaseModel):
 
     """
-    info airbnb city 
-    public state id string empty it is state id name empty
+        Info on AirBnB Cities
+        Public class attributes:
+            state_id: string - empty string: it will be the State.id
+            name: string - empty string
     """
     state_id = ""
     name = ""
@@ -18,4 +20,4 @@ class City(BaseModel):
         super().__init__(*args, **kwargs)
 
     def to_dict(self):
-        return super (City, self).to_dict()
+        return super(City, self).to_dict()
