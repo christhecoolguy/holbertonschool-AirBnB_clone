@@ -20,6 +20,7 @@ class User(BaseModel):
     first_name = ""
     last_name = ""
 
+    # Initializes the objects of the class
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
