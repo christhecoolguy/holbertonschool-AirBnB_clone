@@ -15,7 +15,7 @@ all: Retrieve all objects or all objects of a specific class.
 update: Update the attributes of an object.
 quit: Exit the command interpreter.
 
-.SH Examples
+## Examples
 
 Starting the Program and Running Commands
 To start the console
