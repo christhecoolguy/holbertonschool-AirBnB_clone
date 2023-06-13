@@ -8,6 +8,7 @@ from datetime import datetime
 from models.user import User
 
 # creates an instance of the 'User' class and assigns it to the variable user1
+
 user1 = User()
 
 class TestUser(unittest, TestCase):
@@ -36,3 +37,8 @@ class TestUser(unittest, TestCase):
         """ testing to see if last name is a string """
         self.assertTrue(isinstance(User.last_name, str))
         self.assertTrue(isinstance(user1.last_name, str))
+
+    def test_name(self):
+        """ testing to see if name is a string """
+        self.assertTrue(isinstance(User.name, str))
+        self.assertTrue(isinstance(user1.name, str))
