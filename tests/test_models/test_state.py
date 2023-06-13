@@ -21,4 +21,4 @@ class TestState(unittest.TestCase):
      def test_name (self):
         """ makes sure name is good str """
         self.assertTrue(isinstance(State.name, str))
-        self.assertTRue(isinsance(state1.name, str))
+        self.assertTrue(isinstance(state1.name, str))
