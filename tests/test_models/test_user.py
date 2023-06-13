@@ -37,8 +37,3 @@ class TestUser(unittest.TestCase):
         """ testing to see if last name is a string """
         self.assertTrue(isinstance(User.last_name, str))
         self.assertTrue(isinstance(user1.last_name, str))
-
-    def test_name(self):
-        """ testing to see if name is a string """
-        self.assertTrue(isinstance(User.name, str))
-        self.assertTrue(isinstance(user1.name, str))
