@@ -11,7 +11,7 @@ from models.user import User
 
 user1 = User()
 
-class TestUser(unittest, TestCase):
+class TestUser(unittest.TestCase):
     """ Class for User tests """
 
     def test_id(self):
