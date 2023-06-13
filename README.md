@@ -15,13 +15,19 @@ all: Retrieve all objects or all objects of a specific class.
 update: Update the attributes of an object.
 quit: Exit the command interpreter.
 
-.sh Examples
+.SH Examples
+
 Starting the Program and Running Commands
-To start the console 
+To start the console
+
 **Input:**
-	./console
+```python
+./console
+```
 **Output:**
+```python
 	(hbnb)
+```
 
 Now here are some examples on how to use the console using the create, show, update, all, and destroy commands.
 
