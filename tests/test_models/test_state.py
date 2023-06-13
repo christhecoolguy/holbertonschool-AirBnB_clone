@@ -14,7 +14,7 @@ state1 = State()
 class TestState(unittest.TestCase):
     """" Test state class """
 
-    def test_id(self)
+    def test_id(self):
      """ unit test_id """
      self.assertTrue(isinstance(state1.id, str))
 
